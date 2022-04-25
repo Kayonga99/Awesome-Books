@@ -39,9 +39,10 @@ booksCollection.forEach((book) => {
     let temp = document.createElement('template')
     temp.innerHTML =`
     <li>
-    <h2>${book.bookName}</h2>
-    <span>${book.bookAuthor}</span>
+    <h3>${book.bookName}</h3>
+    <h5>${book.bookAuthor}</h5>
     <button>Remove</button>
+   <hr>
     </li>
     `
     bookUl.appendChild(temp.content)
