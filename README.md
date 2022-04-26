@@ -29,7 +29,11 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-👤 **Author1**
+👤 **Richard**
+
+GitHub: [@Richez003](https://github.com/Richez003)
+- Twitter: [@richardfriday14](https://twitter.com/richardfriday14)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/richard-friday-54980718a)
 
 👤 **Kayonga Chiteta**
 

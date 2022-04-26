@@ -28,7 +28,7 @@ arr.push(books)
 
 const bookCollection = JSON.stringify(arr)
 localStorage.setItem('books', bookCollection)
-
+location.relaod
 })
 
 
