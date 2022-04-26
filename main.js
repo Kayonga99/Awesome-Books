@@ -5,7 +5,7 @@ const bookUl = document.querySelector('.books-list')
 const bookAuthor = document.getElementById('bookAuthor')
 const formId = document.getElementById('form')
 
-console.log(bookUl);
+// console.log(bookUl);
 addBook.addEventListener('click', () => {
     displayBlock.forEach((element) => {
 element.style.display = 'flex'
