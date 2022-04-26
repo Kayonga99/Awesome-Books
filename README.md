@@ -39,6 +39,11 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author2**
 
+  **rotshidzwa chester**
+  
+- GitHub: [@rotshidzw](https://github.com/rotshidzw)
+- Twitter: [@footballlz](https://twitter.com/footballlz)
+- LinkedIn: [Rochidzwa Chester](https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
 
 ## 🤝 Contributing
 

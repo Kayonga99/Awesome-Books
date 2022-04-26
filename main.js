@@ -41,10 +41,22 @@ booksCollection.forEach((book) => {
     <li>
     <h3>${book.bookName}</h3>
     <h5>${book.bookAuthor}</h5>
-    <button>Remove</button>
+    <button id="${book.bookName}" onclick="removeButton('${book}')">Remove</button>
    <hr>
     </li>
     `
     bookUl.appendChild(temp.content)
-})
+    
+});
 
+   const removeButton = (id) => {
+    
+   booksCollection.filter((book) => book.id !== parseInt(id, 10));
+  
+  localStorage.setItem('temp', JSON.stringify(booksCollection));
+ 
+};
+
+
+
+removeButton();
