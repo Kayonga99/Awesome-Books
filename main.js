@@ -4,6 +4,9 @@ const bookName = document.getElementById('bookName')
 const bookUl = document.querySelector('.books-list')
 const bookAuthor = document.getElementById('bookAuthor')
 const formId = document.getElementById('form')
+const button = document.getElementById('btn')
+
+
 
 // console.log(bookUl);
 addBook.addEventListener('click', () => {
@@ -24,13 +27,12 @@ const books = {
 }
 
 arr.push(books)
-// console.log(arr);
 
 const bookCollection = JSON.stringify(arr)
 localStorage.setItem('books', bookCollection)
-location.relaod
-})
+location.reload()
 
+})
 
 
 const bookCollectional = localStorage.getItem('books')
@@ -49,4 +51,7 @@ booksCollection.forEach((book) => {
     `
     bookUl.appendChild(temp.content)
 })
+
+
+
 
