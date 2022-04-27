@@ -8,37 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-          <h1>Awesome Books</h1>
-          <ul class="navItems">
-            <li id="list"><a>List</a></li> 
-            <li id="add-books"><a>Add new</a></li>
-            <li id="contact-section"><a>Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      
-      <section class="books-container">
-        <div><h1 class="books-heading">All Awesome Books</h1></div>
-        <ul class="books-list">
-          
-      </ul>
-      </section>
-  
-      <form id="form" class="add-books hide">
-        <h2 class="form-heading">Add a new book</h2>
-        <input type="text" id="bookName" placeholder="Title" required/>
-        <input type="text" id="bookAuthor" placeholder="Author" required/>
-        <button onclick="location.reload()" id="btn" class="add-btn" type="submit">Add</button>
-      </form>
-  
-     
-      <footer id="copyright">
-        <p>Copyright - Awesome Books 2022</p>
-      </footer>
-  
+  <h1>Awesome Books</h1>
+  <h2>Add a book</h2>
+  <ul class="books-list"></ul>
+  <form id="form">
+    <input id="bookTitle" type="text" placeholder="title" required>
+    <input id="bookAuthor" type="text" placeholder="author" required>
+    <button class="btn" type="submit">Submit</button>
+  </form>
       <script src="main.js" ></script>
 </body>
 </html>
