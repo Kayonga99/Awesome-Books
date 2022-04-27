@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
 
@@ -11,7 +10,7 @@
 - Css
 - Javascript
 
-## Live Demo (if available)
+## Live Demo ()
 
 [Live Demo Link](https://livedemo.com)
 
@@ -28,12 +27,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-
-👤 **Richard**
-
-GitHub: [@Richez003](https://github.com/Richez003)
-- Twitter: [@richardfriday14](https://twitter.com/richardfriday14)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/richard-friday-54980718a)
+**Author1**
 
 👤 **Kayonga Chiteta**
 
@@ -41,7 +35,15 @@ GitHub: [@Richez003](https://github.com/Richez003)
 - Twitter: [@KayongaChiteta3](https://twitter.com/KayongaChiteta3?t=gfILCjmltzGRZOx6FZ8-nQ&s=08)
 - LinkedIn: [Kkayonga Chiteta](https://www.linkedin.com/in/kayonga-chiteta-776949227)
 
-👤 **Author2**
+**Author2**
+
+👤 **Richard**
+
+GitHub: [@Richez003](https://github.com/Richez003)
+- Twitter: [@richardfriday14](https://twitter.com/richardfriday14)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/richard-friday-54980718a)
+
+👤 **Author3**
 
   **rotshidzwa chester**
   
