@@ -1,7 +1,7 @@
 
 # Project Name
 
-> Awsome book.
+> Awsome books.
 
 
 ## Built With
@@ -10,21 +10,8 @@
 - Css
 - Javascript
 
-## Live Demo ()
 
-[Live Demo Link](https://livedemo.com)
-
-
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-
-
+[Live Demo Link](https://kayonga99.github.io/Awesome-Books/)
 
 
 **Author1**
