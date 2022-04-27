@@ -1,7 +1,7 @@
-  const title = document.querySelector('#title');
-  const author = document.querySelector('#author');
-  const form = document.querySelector('#added-book');
-  const bookList = document.querySelector('#added-bklist');
+  const title = document.getElementById('title');
+  const author = document.getElementById('author');
+  const form = document.getElementById('form');
+  const bookList = document.getElementById('added-bklist');
   
 
 // Form local storage availability checker function
