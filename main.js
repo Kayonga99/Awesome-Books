@@ -1,48 +1,70 @@
-const addBook = document.getElementById('add-books')
-const displayBlock = document.querySelectorAll(".hide")
-const bookName = document.getElementById('bookTitle')
-const bookUl = document.querySelector('.books-list')
-const bookAuthor = document.getElementById('bookAuthor')
-const formId = document.getElementById('form')
-const button = document.getElementById('btn')
+  const title = document.querySelector('#title');
+  const author = document.querySelector('#author');
+  const form = document.querySelector('#added-book');
+  const bookList = document.querySelector('#added-bklist');
+  
 
-
-
-
-const arr = [];
-
-
-formId.addEventListener('submit', (e) => {
-    e.preventDefault()
-const books = {
-    bookName: bookName.value,
-    bookAuthor: bookAuthor.value
-}
-
-arr.push(books)
-
-const bookCollection = JSON.stringify(arr)
-localStorage.setItem('books', bookCollection)
-location.reload()
-
-})
-
-
-const bookCollectional = localStorage.getItem('books')
-const booksCollection = JSON.parse(bookCollectional)
-
-
-booksCollection.forEach((book) => {
-    let temp = document.createElement('template')
-    temp.innerHTML =`
-    <li>
-    <h3>${book.bookName}</h3>
-    <h5>${book.bookAuthor}</h5>
-    <button>Remove</button>
-   <hr>
-    </li>
-    `
-    bookUl.appendChild(temp.content)
-    
-});
-
+// Form local storage availability checker function
+function isStorageAvailable(type) {
+    let storage;
+    try {
+      storage = window[type];
+      const x = '__storage_test__';
+      storage.setItem(x, x);
+      storage.removeItem(x);
+      return true;
+    } catch (e) {
+      return e instanceof DOMException && (
+        e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
+    }
+  }
+  
+  
+  let books = [];
+  
+  if (isStorageAvailable('localStorage')) {
+    const data = JSON.parse(localStorage.getItem('bookList'));
+    // and if it's not empty, update it
+    if (data) {
+      books = JSON.parse(localStorage.getItem('bookList'));
+    }
+  }
+  
+  const addData = () => {
+    const book = {
+      id: Math.floor(Math.random() * 1000000),
+      title: title.value,
+      author: author.value,
+    };
+    books.push(book);
+    if (isStorageAvailable('localStorage')) {
+      localStorage.setItem('bookList', JSON.stringify(books));
+    }
+  };
+  const printBooks = () => {
+    bookList.innerHTML = '';
+    books.forEach((dataFromStorage) => {
+      bookList.innerHTML += `<div>
+      <h1>${dataFromStorage.title}</h1>
+      <h2>${dataFromStorage.author}</h2>
+      <button id="${dataFromStorage.title}" onclick="removeButton('${dataFromStorage.id}')">Remove</button>
+      <hr>
+      </div>`;
+    });
+  };
+  
+  const removeButton = (id) => {
+    books = books.filter((book) => book.id !== parseInt(id, 10));
+  
+    localStorage.setItem('bookList', JSON.stringify(books));
+    printBooks();
+  };
+  
+  form.onsubmit = () => {
+    addData();
+    printBooks();
+    form.reset();
+  };
+  
+  printBooks();
+  removeButton();

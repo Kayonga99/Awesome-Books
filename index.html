@@ -10,12 +10,22 @@
 <body>
   <h1>Awesome Books</h1>
   <h2>Add a book</h2>
-  <ul class="books-list"></ul>
-  <form id="form">
-    <input id="bookTitle" type="text" placeholder="title" required>
-    <input id="bookAuthor" type="text" placeholder="author" required>
-    <button class="btn" type="submit">Submit</button>
+  <section id="added-bklist" class="books"></section>
+  <form id="added-book">
+    <br />
+    <div>
+      <label for="title"></label>
+      <input type="text" id="title" placeholder="Title" required />
+    </div>
+    <br />
+    <div>
+      <label for="author"></label>
+      <input type="text" id="author" placeholder="Author" required />
+    </div>
+    <br />
+    <div><button type="submit" id="add-button">Add</button></div>
   </form>
+
       <script src="main.js" ></script>
 </body>
 </html>
