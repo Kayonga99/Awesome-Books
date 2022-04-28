@@ -8,19 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Awesome Books</h1>
-  <h2>Add a book</h2>
-  <div id="added-bklist" class="books"></div>
-  <form id="form">
-    <br />
-      <label for="title"></label>
-      <input type="text" id="title" placeholder="Title" required />
-    <br />
-      <label for="author"></label>
-      <input type="text" id="author" placeholder="Author" required />
-    <br />
-    <div><button type="submit" id="add-button">Add</button></div>
-  </form>
-      <script src="main.js" ></script>
+  <div class="container mt-4">
+    <h1 class="display-9 text-center">My Awesome BookList</h1>
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr class="head">
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+            </tr>
+        </thead>
+        <tbody id="tb-body">
+
+        </tbody>
+
+    </table>
+    <form id=form class="bookForm">
+        <h2 class="text-center text-primary">Add a new Book</h2>
+        <div class="row g-4 justify-content-center form-group">
+            <div class=" col-8 fs-2 mb-4 input-group">
+                <label for="title" class="input-group-text"><span class="title">Title</span></label>
+                <input type="text" id="title" class="form-control">
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center form-group">
+            <div class="col-8 fs-2 mb-4 input-group">
+                <label for="author" class=" input-group-text"><span class="author">Author</span></label>
+                <input type="text" id="author" class="form-control">
+            </div>
+        </div>
+        <div class="row g-3 justify-content-center form-group">
+            <div class="col-8 d-flex justify-content-center fs-2 mb-4">
+                <button type="submit" id="button" class="btn btn-primary btn-block">Add Book</button>
+            </div>
+        </div>
+    </form>
+    
+</div>
+      <script src="ref.js"></script>
 </body>
 </html>
