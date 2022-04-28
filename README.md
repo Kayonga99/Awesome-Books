@@ -1,7 +1,7 @@
 
 # Project Name
 
-> Awsome Books.
+> Awesome books: refactor to use JavaScript classes.
 
 
 ## Built With
