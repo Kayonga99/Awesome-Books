@@ -5,45 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container mt-4">
-    <h1 class="display-9 text-center">My Awesome BookList</h1>
-    <table class="table table-striped mt-5">
-        <thead>
-            <tr class="head">
-                <th scope="col">#</th>
-                <th scope="col">Title</th>
-                <th scope="col">Author</th>
-            </tr>
-        </thead>
-        <tbody id="tb-body">
+<div class="container mt-4">
+  <h1 class="display-9 text-center">My Awesome BookList</h1>
+  <table class="table table-striped mt-5">
+      <thead>
+          <tr class="head">
+              <th scope="col">#</th>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+          </tr>
+      </thead>
+      <tbody id="tb-body">
 
-        </tbody>
+      </tbody>
 
-    </table>
-    <form id=form class="bookForm">
-        <h2 class="text-center text-primary">Add a new Book</h2>
-        <div class="row g-4 justify-content-center form-group">
-            <div class=" col-8 fs-2 mb-4 input-group">
-                <label for="title" class="input-group-text"><span class="title">Title</span></label>
-                <input type="text" id="title" class="form-control">
-            </div>
-        </div>
-        <div class="row g-4 justify-content-center form-group">
-            <div class="col-8 fs-2 mb-4 input-group">
-                <label for="author" class=" input-group-text"><span class="author">Author</span></label>
-                <input type="text" id="author" class="form-control">
-            </div>
-        </div>
-        <div class="row g-3 justify-content-center form-group">
-            <div class="col-8 d-flex justify-content-center fs-2 mb-4">
-                <button type="submit" id="button" class="btn btn-primary btn-block">Add Book</button>
-            </div>
-        </div>
-    </form>
-    
+  </table>
+  <form id=form class="bookForm">
+      <h2 class="text-center text-primary">Add a new Book</h2>
+      <div class="row g-4 justify-content-center form-group">
+          <div class=" col-8 fs-2 mb-4 input-group">
+              <label for="title" class="input-group-text"><span class="title">Title</span></label>
+              <input type="text" id="title" class="form-control">
+          </div>
+      </div>
+      <div class="row g-4 justify-content-center form-group">
+          <div class="col-8 fs-2 mb-4 input-group">
+              <label for="author" class=" input-group-text"><span class="author">Author</span></label>
+              <input type="text" id="author" class="form-control">
+          </div>
+      </div>
+      <div class="row g-3 justify-content-center form-group">
+          <div class="col-8 d-flex justify-content-center fs-2 mb-4">
+              <button type="submit" id="button" class="btn btn-primary btn-block">Add Book</button>
+          </div>
+      </div>
+  </form>
+  
 </div>
       <script src="ref.js"></script>
 </body>
