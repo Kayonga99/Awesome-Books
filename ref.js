@@ -19,7 +19,6 @@ class BookLists {
       bookTable.innerHTML = table;
     }
   
-    // add a book to library array
     addBook(title, author) {
       const book = {
         id: this.bkList.length + 1,
@@ -31,7 +30,6 @@ class BookLists {
       localStorage.setItem('library', JSON.stringify(this.bkList));
     }
   
-    // delete a book
     removeBook(index) {
       this.bkList = this.bkList.filter((b) => b.id !== index);
       localStorage.setItem('library', JSON.stringify(this.bkList));
@@ -46,9 +44,7 @@ class BookLists {
   
   bkList.displayBooks();
   
-  // eslint-disable-next-line no-unused-vars
   function remove(index) {
-    //eslint-disable-line
     bkList.removeBook(index);
   }
   
@@ -61,6 +57,5 @@ class BookLists {
       authorInput.value = '';
     }
   });
-  // load books list when page loads
-  // window.onload = display();
+
   
