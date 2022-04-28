@@ -46,3 +46,23 @@ h2 {
 .bookForm {
   padding-top: 5%;
 }
+
+.nav {
+  display: flex;
+border: 2px solid black;
+border-radius: 5px;
+font-family: Arial, Helvetica, sans-serif;
+justify-content: space-between;
+width: 83%;
+margin-left: 7rem;
+}
+.nav li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.input {
+  width: 83%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 7rem;
+}
