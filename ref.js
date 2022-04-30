@@ -63,10 +63,10 @@ addInput.addEventListener('click', (e) => {
 // website with navigation
 
 const addButton = document.querySelector(".new-book")
-const see = document.querySelector(".list")
+const see = document.querySelector(".list-")
 const contact = document.querySelector(".contact-us")
 const addNewBook = document.getElementById('form')
-const listOfBooks = document.querySelector(".table")
+const wiewList = document.querySelector(".tablesid")
 const viewContact = document.querySelector(".contact")
 
 
@@ -74,11 +74,9 @@ addButton.addEventListener('click', () => {
   addNewBook.style.display = 'block'
 })
 
-// see.addEventListener('click', () => {
-//   listOfBooks.style.display = 'flex'
-// alert('hello')
-  
-// })
+see.addEventListener('click', () => {
+  wiewList.classList.remove('tablesid')
+})
 
 contact.addEventListener('click', () => {
   viewContact.style.display = 'block'
