@@ -59,5 +59,3 @@ addInput.addEventListener('click', (e) => {
     authorInput.value = '';
   }
 });
-
-
