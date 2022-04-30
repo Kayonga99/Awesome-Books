@@ -2,6 +2,7 @@ class BookLists {
   constructor() {
     this.bkList = JSON.parse(localStorage.getItem('library')) || [];
   }
+
   displayBooks() {
     const bookTable = document.getElementById('tb-body');
     let table = '';
@@ -17,6 +18,7 @@ class BookLists {
     });
     bookTable.innerHTML = table;
   }
+
   addBook(title, author) {
     const book = {
       id: this.bkList.length + 1,
@@ -26,6 +28,7 @@ class BookLists {
     this.bkList = [...this.bkList, book];
     localStorage.setItem('library', JSON.stringify(this.bkList));
   }
+
   removeBook(index) {
     this.bkList = this.bkList.filter((b) => b.id !== index);
     localStorage.setItem('library', JSON.stringify(this.bkList));
