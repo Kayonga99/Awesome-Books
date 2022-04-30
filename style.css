@@ -111,16 +111,26 @@ padding-top: 10px;
 nav {
   border: 1px solid rgb(46, 45, 45);
   margin: 20px;
-  /* width: 90rem; */
   margin-left: 7rem;
   margin-right: 7rem;
 position: relative;
 
 }
 
+.table{
+  display: none;
+}
+
 .nav-h4 {
   position: absolute;
   left: 69px;
 padding-top: 10px;
+font-weight: 500;
+color: rgb(75, 74, 74);
+font-size: 24px;
+font-family: 'inter', sans-serif;
+}
 
+#form {
+  display: none;
 }

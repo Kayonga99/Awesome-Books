@@ -59,3 +59,17 @@ addInput.addEventListener('click', (e) => {
     authorInput.value = '';
   }
 });
+
+// website with navigation
+
+const addButton = document.querySelector(".new-book")
+const aListOfBooks = document.querySelector(".list")
+const contact = document.querySelector(".contact")
+const addNewBook = document.getElementById('form')
+const listOfBooks = document.querySelector(".table")
+const viewContact = document.querySelector(".contact")
+
+
+addNewBook.addEventListener('click', () => {
+
+})
