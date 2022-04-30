@@ -83,7 +83,44 @@ h2 {
 }
 
 .pboder {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 7rem;
+  margin-right: 7rem;
   border: 1px solid black;
+  padding: 0.375rem 0.5rem;
+  width: auto;
+  font-size: 12px;
+  font-family: 'inter', sans-serif;
+  font-style: italic;
+  background-color: #fff;
+}
+
+.contact {
+  display: none;
+}
+
+.nav-list {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+list-style: none;
+margin-right: 80px;
+gap: 30px;
+padding-top: 10px;
+}
+
+nav {
+  border: 1px solid rgb(46, 45, 45);
+  margin: 20px;
+  /* width: 90rem; */
+  margin-left: 7rem;
+  margin-right: 7rem;
+position: relative;
+
+}
+
+.nav-h4 {
+  position: absolute;
+  left: 69px;
+padding-top: 10px;
+
 }
