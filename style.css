@@ -81,3 +81,9 @@ p {
 h2 {
   text-align: center;
 }
+
+.pboder {
+  margin-left: 2em;
+  margin-right: 2em;
+  border: 1px solid black;
+}
