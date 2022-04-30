@@ -60,8 +60,7 @@ addInput.addEventListener('click', (e) => {
   }
 });
 
-// website with navigation
-
+//navigation
 const addButton = document.querySelector('.new-book');
 const see = document.querySelector('.list-');
 const contact = document.querySelector('.contact-us');
