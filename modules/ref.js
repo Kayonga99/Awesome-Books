@@ -25,7 +25,6 @@ class BookLists {
       title,
       author,
     };
-
     this.bkList = [...this.bkList, book];
     localStorage.setItem('library', JSON.stringify(this.bkList));
   }
@@ -36,20 +35,16 @@ class BookLists {
     this.displayBooks();
   }
 }
-
 const bkList = new BookLists();
 const titleInput = document.querySelector('#title');
 const authorInput = document.querySelector('#author');
 const addInput = document.querySelector('#button');
-
 bkList.displayBooks();
-
 // eslint-disable-next-line no-unused-vars
 function remove(index) {
     //eslint-disable-line
   bkList.removeBook(index);
 }
-
 addInput.addEventListener('click', (e) => {
   e.preventDefault();
   if (titleInput.value && authorInput.value) {

@@ -46,3 +46,91 @@ h2 {
 .bookForm {
   padding-top: 5%;
 }
+
+.nav {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  width: 83%;
+  margin-left: 7rem;
+}
+
+.nav li {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.input {
+  width: 83%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 7rem;
+}
+
+.contact {
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  line-height: 15px;
+  margin: 0 auto;
+  width: 400px;
+  display: none;
+}
+
+p {
+  padding-left: 20px;
+}
+
+.h2 {
+  text-align: center;
+}
+
+.pboder {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  border: 1px solid black;
+  padding: 0.375rem 0.5rem;
+  width: auto;
+  font-size: 12px;
+  margin-top: 13rem;
+  font-family: 'inter', sans-serif;
+  font-style: italic;
+  background-color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 80px;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+nav {
+  border: 1px solid rgb(46, 45, 45);
+  margin: 20px;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  position: relative;
+}
+
+.tablesid {
+  display: none;
+}
+
+.nav-h4 {
+  position: absolute;
+  left: 69px;
+  padding-top: 10px;
+  font-weight: 500;
+  color: rgb(75, 74, 74);
+  font-size: 24px;
+  font-family: 'inter', sans-serif;
+}
+
+#form {
+  display: none;
+}

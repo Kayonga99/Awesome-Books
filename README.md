@@ -1,7 +1,7 @@
 
 # Project Name
 
-> Awesome books: refactor to use JavaScript classes.
+> Awesome books: website with navigations.
 
 
 ## Built With

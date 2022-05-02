@@ -8,9 +8,19 @@
     <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+    <nav>
+        <h4 class="nav-h4">Awesome Books</h4>
+        <ul class="nav-list">
+    <li class="list-">List</li>
+    <li class="separator">|</li>
+    <li class="new-book">Add new</li>
+    <li class="">|</li>
+    <li class="contact-us">Contact</li>
+</ul>
+    </nav>
 <div class="container mt-4">
   <h1 class="display-9 text-center">My Awesome BookList</h1>
-  <table class="table table-striped mt-5">
+  <table class="table table-striped mt-5 tablesid">
       <thead>
           <tr class="head">
               <th scope="col">#</th>
@@ -19,9 +29,7 @@
           </tr>
       </thead>
       <tbody id="tb-body">
-
       </tbody>
-
   </table>
   <form id=form class="bookForm">
       <h2 class="text-center text-primary">Add a new Book</h2>
@@ -43,9 +51,23 @@
           </div>
       </div>
   </form>
-  
+  <div class="contact">
+      <h2 class=".h2">contact information</h2>
+      <p>Do have any questions or you want to say "Hello!"<br> you  can reach out to us!</p>
+     <ul> 
+        <p><li>e-mail: ausomecollaborators@gamil.com</li> </p>
+        <p><li>github: https://github.com/ausomecollaborators</li></p>
+        <p><li>linkin: https://www.linkedin.com/ausomecollaborators-8062b6211/</li></p>
+</ul>
+  </div>
 </div>
-      <script src="ref.js"></script>
-      <script src="main.js"></script>
+<footer>
+<p class="pboder">
+copyright © 2022 Ausomecollaborators, Inc
+</p>
+</footer>
+      <script src="./modules/ref.js"></script>
+      <script src="./modules/main.js"></script>
+      <script src="./modules/nav.js"></script>
 </body>
 </html>
