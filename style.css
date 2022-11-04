@@ -128,7 +128,9 @@ body {
     font-size: 16px;
     font-style: italic;
     background-color: #fff;
-    height: 5em;
+    height: 4em;
+    display: flex;
+    align-items: flex-end;
   }
 
   .nav-list {
