@@ -1,4 +1,4 @@
-/* body {
+ body {
   background-image:
     linear-gradient(
       360deg,
@@ -11,135 +11,16 @@
   height: 100%;
 }
 
-h1 {
-  padding-bottom: 5%;
-  font-weight: 700;
-}
-
-.table {
-  border: 1px solid black;
-}
-
-table th {
-  width: 30%;
-}
-
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-}
-
-.author {
-  font-weight: bolder;
-  font-size: 1rem;
-}
-
-.title {
-  font-weight: bolder;
-  font-size: 1rem;
-}
-
-.form-control {
-  padding: 1.2rem 0.5rem;
-}
-
-.bookForm {
-  padding-top: 5%;
-}
-
-.nav {
-  display: flex;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: space-between;
-  width: 83%;
-  margin-left: 7rem;
-}
-
-.nav li {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.input {
-  width: 83%;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 7rem;
-}
-
-.contact {
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  line-height: 15px;
-  margin: 0 auto;
-  width: 400px;
-  display: none;
-}
-
-p {
-  padding-left: 20px;
-}
-
-.h2 {
-  text-align: center;
-}
-
-.pboder {
-  margin-left: 7rem;
-  margin-right: 7rem;
-  border: 1px solid black;
-  padding: 0.375rem 0.5rem;
-  width: auto;
-  font-size: 12px;
-  margin-top: 13rem;
-  font-family: 'inter', sans-serif;
-  font-style: italic;
-  background-color: #fff;
-}
-
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-  margin-right: 80px;
-  gap: 30px;
-  padding-top: 10px;
-}
-
-nav {
-  border: 1px solid rgb(46, 45, 45);
-  margin: 20px;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  position: relative;
-}
-
-.tablesid {
-  display: none;
-}
-
-.nav-h4 {
-  position: absolute;
-  left: 69px;
-  padding-top: 10px;
-  font-weight: 500;
-  color: rgb(75, 74, 74);
-  font-size: 24px;
-  font-family: 'inter', sans-serif;
-}
-
-#form {
-  display: none;
-} */
-
 .nav--link {
   display:flex;
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 95vw;
+  padding: 15px 10px;
+  border-radius: 20px;
+  border: none;
 }
 
 .nav-list {
@@ -156,4 +37,127 @@ nav {
   color: rgb(75, 74, 74);
   font-size: 24px;
   font-family: 'inter', sans-serif;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(226, 226, 226);
+}
+
+@media screen and (min-width: 768px) {
+
+
+  h1 {
+    padding-bottom: 5%;
+    font-weight: 700;
+  }
+  
+  .table {
+    border: 1px solid black;
+  }
+  
+  table th {
+    width: 30%;
+  }
+  
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  
+  .author {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  
+  .form-control {
+    padding: 1.2rem 0.5rem;
+  }
+  
+  .bookForm {
+    padding-top: 5%;
+  }
+  
+  .nav {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 7rem;
+  }
+  
+  .nav li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .input {
+    width: 83%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 7rem;
+  }
+  
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    line-height: 15px;
+    margin: 0 auto;
+    width: 400px;
+    display: none;
+  }
+  
+  p {
+    padding-left: 20px;
+  }
+  
+  .h2 {
+    text-align: center;
+  }
+  
+  .pboder {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    border: 1px solid black;
+    padding: 0.375rem 0.5rem;
+    width: auto;
+    font-size: 12px;
+    margin-top: 16rem;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    background-color: #fff;
+    height: 5em;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    /* margin-right: 80px; */
+    gap: 30px;
+    padding-top: 10px;
+  }
+  
+  nav {
+    border: 1px solid rgb(46, 45, 45);
+    margin: 20px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    position: relative;
+  }
+  
+  .tablesid {
+    display: none;
+  }
+  
+  
+  #form {
+    display: none;
+  }
 }
