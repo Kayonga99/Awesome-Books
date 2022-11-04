@@ -11,7 +11,7 @@
 - Javascript
 
 
-[Live Demo Link](https://kayonga99.github.io/Awesome-Books/)
+[Live Demo Link](https://peppy-salmiakki-893648.netlify.app/)
 
 
 **Author1**
